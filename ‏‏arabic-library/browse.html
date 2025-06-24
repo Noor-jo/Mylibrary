@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تصفح الكتب | مكتبة مدرسة الصريح الثانوية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                <span>مكتبة مدرسة الصريح الثانوية</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن المكتبة</a></li>
+                    <li><a href="browse.html" class="active">تصفح الكتب</a></li>
+                    <li><a href="activities.html">النشاطات</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="ابحث عن كتاب...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+<h1>قائمة الكتب</h1>
+  
+  <!-- Search Box -->
+  <input type="text" id="search" placeholder="ابحث عن كتاب..." dir="rtl">
+  
+  <!-- Books Container -->
+  <div id="books-container">
+    <p>جاري تحميل الكتب...</p>
+  </div>
+
+  <!-- Load JavaScript -->
+  <script src="js/load-books.js"></script>
+
+    <main class="container">
+        <div class="browse-container">
+            <div class="sidebar">
+                <div class="filter-section">
+                    <h3 class="filter-title">تصفية النتائج</h3>
+                    <div class="filter-group">
+                        <h4>التصنيف الرئيسي</h4>
+                        <ul class="filter-options">
+                            <li><a href="#" data-dewey="">كل التصنيفات</a></li>
+                            <li><a href="#" data-dewey="0">المعارف العامة (000)</a></li>
+                            <li><a href="#" data-dewey="1">الفلسفة (100)</a></li>
+                            <li><a href="#" data-dewey="2">الدين (200)</a></li>
+                            <li><a href="#" data-dewey="3">العلوم الاجتماعية (300)</a></li>
+                            <li><a href="#" data-dewey="4">اللغات (400)</a></li>
+                            <li><a href="#" data-dewey="5">العلوم (500)</a></li>
+                            <li><a href="#" data-dewey="6">التقنية (600)</a></li>
+                            <li><a href="#" data-dewey="7">الفنون (700)</a></li>
+                            <li><a href="#" data-dewey="8">الأدب (800)</a></li>
+                            <li><a href="#" data-dewey="9">التاريخ والجغرافيا (900)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <h1 class="section-title">تصفح الكتب</h1>
+                
+                <div id="books-container" class="books-grid">
+                    <div class="loading">
+                        <i class="fas fa-spinner fa-spin"></i> جاري تحميل الكتب...
+                    </div>
+                </div>
+                
+                <div id="pagination" class="pagination"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">عن المكتبة</a></li>
+                        <li><a href="browse.html">تصفح الكتب</a></li>
+                        <li><a href="activities.html">النشاطات</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>تصنيفات رئيسية</h3>
+                    <ul>
+                        <li><a href="#">العلوم (500)</a></li>
+                        <li><a href="#">التقنية (600)</a></li>
+                        <li><a href="#">الفنون (700)</a></li>
+                        <li><a href="#">الأدب (800)</a></li>
+                        <li><a href="#">التاريخ والجغرافيا (900)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>معلومات التواصل</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> الأردن، إربد، الصريح</li>
+                        <li><i class="fas fa-phone"></i> 1234567890</li>
+                        <li><i class="fas fa-envelope"></i> library@alsareeh.edu.jo</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>تابعنا</h3>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> فيسبوك</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> تويتر</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> إنستغرام</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; 2023 مكتبة مدرسة الصريح الثانوية الشاملة للبنات</p>
+                <p>بإشراف: <span class="signature">المعلمة أسماء الحوراني</span> <i class="fas fa-feather"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/browse.js"></script>
+</body>
+</html>

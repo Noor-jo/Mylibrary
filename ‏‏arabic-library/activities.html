@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>النشاطات | مكتبة مدرسة الصريح الثانوية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                <span>مكتبة مدرسة الصريح الثانوية</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن المكتبة</a></li>
+                    <li><a href="browse.html">تصفح الكتب</a></li>
+                    <li><a href="activities.html" class="active">النشاطات</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="ابحث عن كتاب...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="activities-page">
+            <h1 class="section-title"><i class="fas fa-calendar-alt"></i> نشاطات المكتبة</h1>
+            
+            <div class="activities-gallery">
+                <!-- Activity 1 -->
+                <div class="activity-card">
+                    <div class="activity-image">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <div class="activity-info">
+                        <div class="activity-date">15 أكتوبر 2023</div>
+                        <h3>معرض الكتاب السنوي</h3>
+                        <p>معرض للكتاب بمشاركة دور النشر المحلية، حيث تم عرض أحدث الإصدارات والكتب المدرسية المساندة.</p>
+                    </div>
+                </div>
+                
+                <!-- Activity 2 -->
+                <div class="activity-card">
+                    <div class="activity-image">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <div class="activity-info">
+                        <div class="activity-date">5 نوفمبر 2023</div>
+                        <h3>ورشة كتابة القصة القصيرة</h3>
+                        <p>ورشة عمل بإشراف الكاتبة سناء الشعلان لتعليم أساسيات كتابة القصة القصيرة.</p>
+                    </div>
+                </div>
+                
+                <!-- Activity 3 -->
+                <div class="activity-card">
+                    <div class="activity-image">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="activity-info">
+                        <div class="activity-date">1 سبتمبر 2023</div>
+                        <h3>مسابقة القراءة الصيفية</h3>
+                        <p>حفل تكريم الفائزات في مسابقة القراءة الصيفية التي شاركت فيها 120 طالبة.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="events-calendar">
+                <div class="calendar-header">
+                    <h3 class="calendar-title">تقويم الفعاليات القادمة</h3>
+                </div>
+                <div class="calendar-grid">
+                    <div class="calendar-day-header">الأحد</div>
+                    <div class="calendar-day-header">الاثنين</div>
+                    <div class="calendar-day-header">الثلاثاء</div>
+                    <div class="calendar-day-header">الأربعاء</div>
+                    <div class="calendar-day-header">الخميس</div>
+                    <div class="calendar-day-header">الجمعة</div>
+                    <div class="calendar-day-header">السبت</div>
+                    
+                    <!-- Calendar days would be populated by JavaScript -->
+                    <div class="calendar-day">1</div>
+                    <div class="calendar-day">2</div>
+                    <div class="calendar-day event">3
+                        <div class="event-tooltip">محاضرة عن البحث العلمي</div>
+                    </div>
+                    <!-- More days... -->
+                </div>
+            </div>
+            
+            <div class="student-submissions">
+                <h2 class="section-title"><i class="fas fa-user-graduate"></i> إبداعات الطالبات</h2>
+                <div class="submissions-grid">
+                    <div class="submission-card">
+                        <div class="submission-image">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="submission-info">
+                            <h3>قصتي الأولى</h3>
+                            <p>بقلم: سارة أحمد - الصف الحادي عشر</p>
+                            <button class="view-btn">قراءة القصة</button>
+                        </div>
+                    </div>
+                    <!-- More submissions... -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">عن المكتبة</a></li>
+                        <li><a href="browse.html">تصفح الكتب</a></li>
+                        <li><a href="activities.html">النشاطات</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>تصنيفات رئيسية</h3>
+                    <ul>
+                        <li><a href="#">العلوم (500)</a></li>
+                        <li><a href="#">التقنية (600)</a></li>
+                        <li><a href="#">الفنون (700)</a></li>
+                        <li><a href="#">الأدب (800)</a></li>
+                        <li><a href="#">التاريخ والجغرافيا (900)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>معلومات التواصل</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> الأردن، إربد، الصريح</li>
+                        <li><i class="fas fa-phone"></i> 1234567890</li>
+                        <li><i class="fas fa-envelope"></i> library@alsareeh.edu.jo</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>تابعنا</h3>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> فيسبوك</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> تويتر</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> إنستغرام</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; 2023 مكتبة مدرسة الصريح الثانوية الشاملة للبنات</p>
+                <p>بإشراف: <span class="signature">المعلمة أسماء الحوراني</span> <i class="fas fa-feather"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
